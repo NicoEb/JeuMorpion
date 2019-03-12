@@ -10,8 +10,9 @@ namespace JeuMorpion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("bienvenu  veuillez choisir le nombre de cases : ");
+            Console.WriteLine("bienvenu dans le jeu de Morpion, veuillez choisir le nombre de cases : ");
             int nombreDeCase = int.Parse(Console.ReadLine());
+
             Morpion PremierMorpion = new Morpion(nombreDeCase);
             
             PremierMorpion.SymboleDuJoueurQuiDoitJouer = Symbol.croix;
